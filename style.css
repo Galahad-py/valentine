@@ -139,12 +139,12 @@
 /* Mobile responsiveness */
 @media (max-width: 425px) {
   .yesBtn {
-      padding: 8px 16px; /* Smaller padding for mobile */
+      padding: 10px 20px; /* Smaller padding for mobile */
       font-size: 14px; /* Smaller font size for mobile */
   }
 
   .noBtn {
-      padding: 8px 16px; /* Smaller padding for mobile */
+      padding: 10px 20px; /* Smaller padding for mobile */
       font-size: 14px; /* Smaller font size for mobile */
   }
 
@@ -155,15 +155,15 @@
   }
 
   .valentine-gif {
-      width: 300px; /* Smaller GIF for mobile */
+      width: 400px; /* Smaller GIF for mobile */
   }
 
   .heart-gif {
-      width: 300px; /* Smaller GIF for mobile */
+      width: 400px; /* Smaller GIF for mobile */
   }
 
   .response-text {
-      font-size: 1.2em; /* Smaller text for mobile */
+      font-size: 1.5em; /* Smaller text for mobile */
   }
 
   /* Adjust scaling factor for mobile */
