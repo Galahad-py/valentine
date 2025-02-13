@@ -116,7 +116,7 @@
 
             setTimeout(() => {
                 heart.remove();
-            }, 5000); // Adjust based on the animation duration
+            }, 10000); // Adjust based on the animation duration
         };
 
         // Create hearts at regular intervals
