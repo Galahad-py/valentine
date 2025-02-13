@@ -4,6 +4,7 @@
     const noBtn = document.querySelector('.noBtn');
     const selectDiv = document.querySelector('.select');
     const requestText = document.querySelector('.container h3'); // Get the request text element
+    const responseText = document.querySelector('.response-text')
     const cycleMessage = document.querySelector('.cycle-message'); // Get the cycling message element
     const pidginButton = document.querySelector('.pidgin'); // Get the "Change to Pidgin" button
 
@@ -50,6 +51,11 @@
 
     // Function to update the request text and cycling message
     const updateText = function () {
+        if (isPidgin) {
+            responseText.textContent = "Yes! why you con dey waste time before 💖"
+        } else {
+            responseText.textContent = "Yes! why did you take so long 💖"
+        }
         if (isPidgin) {
             requestText.textContent = pidginMessages[0]; // First message is the request text
             if (!isFirstClick) {
