@@ -10,7 +10,6 @@
 
     // Arrays for original and Pidgin messages
     const originalMessages = [
-        "Will you be my valentine?",
         "I’ll be your best Valentine, just pick Yes!",
         "I promise it’ll be amazing, pick Yes!",
         "You won’t regret it, pick Yes!",
@@ -27,7 +26,6 @@
         "Try thinking about it again!",
     ];
     const pidginMessages = [
-        "Howfar, you go like be my Val?",
         "I go be your best Valentine, just pick Yes!",
         "I promise say e go sweet, pick Yes!",
         "You no regret am, pick Yes!",
@@ -52,17 +50,14 @@
     // Function to update the request text and cycling message
     const updateText = function () {
         if (isPidgin) {
-            responseText.textContent = "Yes! why you con dey waste time before 💖"
-        } else {
-            responseText.textContent = "Yes! why did you take so long 💖"
-        }
-        if (isPidgin) {
-            requestText.textContent = pidginMessages[0]; // First message is the request text
+            responseText.textContent = "Yes! why you con dey waste time before 💖";
+            requestText.innerHTML = `Howfar, you go like be my Val? 🌹 <br> If you get mind, talk NO`;
             if (!isFirstClick) {
                 cycleMessage.textContent = pidginMessages[messageIndex + 1]; // Subsequent messages are for cycling
             }
         } else {
-            requestText.textContent = originalMessages[0]; // First message is the request text
+            responseText.textContent = "Yes! why did you take so long 💖";
+            requestText.innerHTML = `Will you be my valentine? 🌹 <br> I dare you to say NO`;
             if (!isFirstClick) {
                 cycleMessage.textContent = originalMessages[messageIndex + 1]; // Subsequent messages are for cycling
             }
