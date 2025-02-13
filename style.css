@@ -140,12 +140,12 @@
 @media (max-width: 425px) {
   .yesBtn {
       padding: 10px 20px; /* Smaller padding for mobile */
-      font-size: 14px; /* Smaller font size for mobile */
+      font-size: 20px; /* Smaller font size for mobile */
   }
 
   .noBtn {
       padding: 10px 20px; /* Smaller padding for mobile */
-      font-size: 16px; /* Smaller font size for mobile */
+      font-size: 20px; /* Smaller font size for mobile */
   }
 
   .pidgin {
