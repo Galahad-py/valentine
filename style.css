@@ -145,12 +145,12 @@
 
   .noBtn {
       padding: 10px 20px; /* Smaller padding for mobile */
-      font-size: 14px; /* Smaller font size for mobile */
+      font-size: 16px; /* Smaller font size for mobile */
   }
 
   .pidgin {
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 10px;
   }
 
