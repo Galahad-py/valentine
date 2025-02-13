@@ -137,7 +137,7 @@
 }
 
 /* Mobile responsiveness */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .yesBtn {
       padding: 10px 20px; /* Smaller padding for mobile */
       font-size: 20px; /* Smaller font size for mobile */
@@ -155,11 +155,11 @@
   }
 
   .valentine-gif {
-      width: 400px; /* Smaller GIF for mobile */
+      width: 300px; /* Smaller GIF for mobile */
   }
 
   .heart-gif {
-      width: 400px; /* Smaller GIF for mobile */
+      width: 300px; /* Smaller GIF for mobile */
   }
 
   .response-text {
