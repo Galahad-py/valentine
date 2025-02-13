@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.pidgin{
+  background-color: rgb(255, 95, 95);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #ffff;
+}
+
+.yesBtn {
+  background-color: rgb(4, 192, 4);
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  color: #ffff;
+}
+
+.noBtn {
+  background-color: rgb(254, 60, 60);
+  border: none;
+  padding: 10px 20px;
+  color: #ffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.select {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.cycle-message {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+.valentine-gif {
+  width: 400px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.response-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.heart-gif {
+  width: 400px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.response-text {
+  font-size: 1.5em;
+  color: #ff1493; /* Pink color for the text */
+  margin-top: 10px;
+}
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure the hearts don't interfere with clicks */
+  overflow: hidden;
+  z-index: 1000; /* Ensure the hearts appear above other content */
+}
+
+.heart {
+  position: absolute;
+  font-size: 24px; /* Size of the heart emoji */
+  color: #ff1493; /* Pink color for the hearts */
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+      transform: translateY(100vh); /* Move the heart to the bottom of the screen */
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .yesBtn {
+      padding: 8px 16px; /* Smaller padding for mobile */
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .noBtn {
+      padding: 8px 16px; /* Smaller padding for mobile */
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .pidgin {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .valentine-gif {
+      width: 300px; /* Smaller GIF for mobile */
+  }
+
+  .heart-gif {
+      width: 300px; /* Smaller GIF for mobile */
+  }
+
+  .response-text {
+      font-size: 1.2em; /* Smaller text for mobile */
+  }
+
+  /* Adjust scaling factor for mobile */
+  .yesBtn {
+      transform: scale(0.9); /* Smaller scaling for mobile */
+  }
+}
