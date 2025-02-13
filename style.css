@@ -126,7 +126,7 @@
 }
 
 /* Mobile responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .yesBtn {
       padding: 8px 16px; /* Smaller padding for mobile */
       font-size: 14px; /* Smaller font size for mobile */
