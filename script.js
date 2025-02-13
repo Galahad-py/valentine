@@ -84,9 +84,9 @@
             clickCounter++;
 
             // Swap positions every 2 clicks
-            if (clickCounter % 2 === 0) {
+            if (clickCounter % 1 === 0) {
                 // Check current order and swap
-                if (selectDiv.firstChild === noBtn) {
+                if (selectDiv.children[0] === noBtn) {
                     selectDiv.insertBefore(yesBtn, noBtn);
                 } else {
                     selectDiv.insertBefore(noBtn, yesBtn);
